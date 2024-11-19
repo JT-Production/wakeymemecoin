@@ -49,7 +49,7 @@ toggler.addEventListener("click", function(){
 
 //counter
 
-let section_counter = document.querySelector('.row')
+let section_counter = document.querySelector('.counter')
 let counters = document.querySelectorAll('.value');
 
 let speed = 200;
@@ -89,3 +89,21 @@ let CounterObserver = new IntersectionObserver((entries, observer) => {
 });
 CounterObserver.observe(section_counter);
 
+
+
+
+/* Loader*/
+var loaderWrapper = document.querySelector('.loading');
+
+
+// setTimeout (() => {
+//     spinnerwrapper.style.opacity = '0';
+
+// },1000);
+window.addEventListener('load', () =>{
+    loaderWrapper.style.opacity = '0';
+
+    setTimeout(() =>{
+        loaderWrapper.style.display = 'none';
+    },1000)
+})
