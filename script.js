@@ -44,9 +44,9 @@ toggler.addEventListener("click", function(){
     
     }else{
         console.log("false");
-        
+        togglerIcon.classList.remove("fa-xmark");
         togglerIcon.classList.add("fa-bars")
-        togglerIcon.classList.remove("fa-xmark")
+        
     }
 })
 
