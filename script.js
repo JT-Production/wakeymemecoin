@@ -14,6 +14,8 @@ function fixedBlurNav() {
         navbar.classList.remove("sticky-top");
         navbar.classList.add("my-3");
         navbar.classList.add("fixed-top");
+        navbar.classList.add("animate__fadeInDown");
+
         
 
         navbar.classList.add("new-nav");
@@ -24,6 +26,8 @@ function fixedBlurNav() {
         navbar.classList.remove("fixed-top");
         navbar.classList.remove("my-3")
         navbar.classList.remove("new-nav");
+        navbar.classList.remove("animate__fadeInDown");
+
         
     }
 }
